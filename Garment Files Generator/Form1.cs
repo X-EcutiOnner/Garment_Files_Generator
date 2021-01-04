@@ -152,10 +152,9 @@ namespace Garment_Files_Generator
                 System.IO.File.Copy(ACTFR, path + @"\data\sprite\로브\" + G_FILENAME + @"\여\" + KroNames.girl[i] + ".act", true);
             }
 
-            textBoxinfo.Text += "------------------------------------------------------" + Environment.NewLine;
-            textBoxinfo.Text += "==================================" + Environment.NewLine;
-            textBoxinfo.Text += "------------------------------------------------------" + Environment.NewLine;
-            textBoxinfo.Text += "iteminfo.lua/iteminfo.lub :" + Environment.NewLine;
+            textBoxinfo.Text += "=============================================================" + Environment.NewLine;
+            textBoxinfo.Text += "Put in System\\ItemInfo*.(lua/lub) file" + Environment.NewLine;
+            textBoxinfo.Text += "=============================================================" + Environment.NewLine;
             textBoxinfo.Text += "[<ItemID>] = {" + Environment.NewLine;
             textBoxinfo.Text += "   unidentifiedDisplayName = \"" + G_INGAME + "\"," + Environment.NewLine;
             textBoxinfo.Text += "   unidentifiedResourceName = \"" + G_FILENAME + "\"," + Environment.NewLine;
@@ -175,20 +174,25 @@ namespace Garment_Files_Generator
             textBoxinfo.Text += "   ClassNum = <ViewID>," + Environment.NewLine;
             textBoxinfo.Text += "   costume = false" + Environment.NewLine;
             textBoxinfo.Text += "}," + Environment.NewLine;
-            textBoxinfo.Text += "------------------------------------------------------" + Environment.NewLine;
-            textBoxinfo.Text += "spriterobename.lua/spriterobename.lub :" + Environment.NewLine;
+            textBoxinfo.Text += " " + Environment.NewLine;
+            textBoxinfo.Text += "=============================================================" + Environment.NewLine;
+            textBoxinfo.Text += "Put in data\\luafiles514\\lua files\\datainfo\\SpriteRobeName.(lua/lub) file" + Environment.NewLine;
+            textBoxinfo.Text += "=============================================================" + Environment.NewLine;
             textBoxinfo.Text += "RobeNameTable = {" + Environment.NewLine;
             textBoxinfo.Text += "   [SPRITE_ROBE_IDs.ROBE_SwordWing] = \"" + G_FILENAME + "\"" + Environment.NewLine;
             textBoxinfo.Text += "}" + Environment.NewLine;
             textBoxinfo.Text += "RobeNameTable_Eng = {" + Environment.NewLine;
             textBoxinfo.Text += "   [SPRITE_ROBE_IDs.ROBE_" + G_FILENAME + "] = \"" + G_FILENAME + "\"" + Environment.NewLine;
             textBoxinfo.Text += "}" + Environment.NewLine;
-            textBoxinfo.Text += "------------------------------------------------------" + Environment.NewLine;
-            textBoxinfo.Text += "spriterobeid.lua/spriterobeid.lub :" + Environment.NewLine;
+            textBoxinfo.Text += " " + Environment.NewLine;
+            textBoxinfo.Text += "=============================================================" + Environment.NewLine;
+            textBoxinfo.Text += "Put in data\\luafiles514\\lua files\\datainfo\\SpriteRobeID.(lua/lub) file" + Environment.NewLine;
+            textBoxinfo.Text += "=============================================================" + Environment.NewLine;
             textBoxinfo.Text += "SPRITE_ROBE_IDs = {" + Environment.NewLine;
             textBoxinfo.Text += "   ROBE_" + G_FILENAME + " = <ViewID>" + Environment.NewLine;
             textBoxinfo.Text += "}" + Environment.NewLine;
-            textBoxinfo.Text += "------------------------------------------------------" + Environment.NewLine;
+            textBoxinfo.Text += " " + Environment.NewLine;
+            textBoxinfo.Text += "=============================================================" + Environment.NewLine;
             textBoxinfo.Text += " " + Environment.NewLine;
 
             MessageBox.Show("Info: Everything All Done!!!");
