@@ -172,7 +172,8 @@ namespace Garment_Files_Generator
             textBoxinfo.Text += "       \"Weight: ^7777777^000000\"," + Environment.NewLine;
             textBoxinfo.Text += "   }," + Environment.NewLine;
             textBoxinfo.Text += "   slotCount = 0," + Environment.NewLine;
-            textBoxinfo.Text += "   ClassNum = <ViewID>" + Environment.NewLine;
+            textBoxinfo.Text += "   ClassNum = <ViewID>," + Environment.NewLine;
+            textBoxinfo.Text += "   costume = false" + Environment.NewLine;
             textBoxinfo.Text += "}," + Environment.NewLine;
             textBoxinfo.Text += "------------------------------------------------------" + Environment.NewLine;
             textBoxinfo.Text += "spriterobename.lua/spriterobename.lub :" + Environment.NewLine;
