@@ -23,6 +23,7 @@ namespace Garment_Files_Generator
         {
             var SPRF = new System.Windows.Forms.OpenFileDialog();
             SPRF.Filter = "SPR Files|*.spr";
+
             if (SPRF.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string fileToOpen = SPRF.FileName;
@@ -36,6 +37,7 @@ namespace Garment_Files_Generator
         {
             var ACTF = new System.Windows.Forms.OpenFileDialog();
             ACTF.Filter = "ACT Files|*.act";
+
             if (ACTF.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string fileToOpen = ACTF.FileName;
@@ -44,6 +46,7 @@ namespace Garment_Files_Generator
                 textBoxACT.Text = ACTF.FileName;
             }
         }
+
         private void ButtonGENERATE_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(textBoxName.Text))
@@ -51,41 +54,49 @@ namespace Garment_Files_Generator
                 MessageBox.Show("Input Garment file name.");
                 return;
             }
+
             if (string.IsNullOrWhiteSpace(textBoxGName.Text))
             {
                 MessageBox.Show("Input Garment name.");
                 return;
             }
+
             if (string.IsNullOrWhiteSpace(textBoxSPR.Text))
             {
                 MessageBox.Show("Import the main Spirt file");
                 return;
             }
+
             if (string.IsNullOrWhiteSpace(textBoxACT.Text))
             {
                 MessageBox.Show("Import the main Act file");
                 return;
             }
+
             if (string.IsNullOrWhiteSpace(textBoxSPRd.Text))
             {
                 MessageBox.Show("Import the Drop Spirt file");
                 return;
             }
+
             if (string.IsNullOrWhiteSpace(textBoxACTd.Text))
             {
                 MessageBox.Show("Import the Drop Act file");
                 return;
             }
+
             if (string.IsNullOrWhiteSpace(textBoxitm.Text))
             {
                 MessageBox.Show("Import the Item BMP file");
                 return;
             }
+
             if (string.IsNullOrWhiteSpace(textBoxcoll.Text))
             {
                 MessageBox.Show("Import the Collection BMP file");
                 return;
             }
+
             string path = Path.GetDirectoryName(Application.ExecutablePath);
             var G_FILENAME = textBoxName.Text;
             var G_INGAME = textBoxGName.Text;
@@ -95,34 +106,43 @@ namespace Garment_Files_Generator
             var ACTFRd = textBoxACTd.Text;
             var itmbmp = textBoxitm.Text;
             var collbmp = textBoxcoll.Text;
+
             string pathdatam = path + @"\data\sprite\로브\" + G_FILENAME+ @"\남";
             string pathdataf = path + @"\data\sprite\로브\" + G_FILENAME + @"\여";
             string pathdatal = path + @"\data\sprite\아이템";
             string pathdatai = path + @"\data\texture\유저인터페이스\item";
             string pathdatac = path + @"\data\texture\유저인터페이스\collection";
-            if (!Directory.Exists(pathdatam)) {
+
+            if (!Directory.Exists(pathdatam))
+            {
                 DirectoryInfo DATAFm = Directory.CreateDirectory(pathdatam);
             }
+
             if (!Directory.Exists(pathdataf))
             {
                 DirectoryInfo DATAFf = Directory.CreateDirectory(pathdataf);
             }
+
             if (!Directory.Exists(pathdatal))
             {
                 DirectoryInfo DATAFl = Directory.CreateDirectory(pathdatal);
             }
+
             if (!Directory.Exists(pathdatai))
             {
                 DirectoryInfo DATAFi = Directory.CreateDirectory(pathdatai);
             }
+
             if (!Directory.Exists(pathdatac))
             {
                 DirectoryInfo DATAFc = Directory.CreateDirectory(pathdatac);
             }
+
             System.IO.File.Copy(SPRFRd, path + @"\data\sprite\아이템\" + G_FILENAME + ".spr" , true);
             System.IO.File.Copy(ACTFRd, path + @"\data\sprite\아이템\" + G_FILENAME + ".act", true);
             System.IO.File.Copy(itmbmp, path + @"\data\texture\유저인터페이스\item\" + G_FILENAME + ".bmp" , true);
             System.IO.File.Copy(collbmp, path + @"\data\texture\유저인터페이스\collection\" + G_FILENAME + ".bmp", true);
+
             for (int i = 0; i < KroNames.boy.Length; i++)
             {
                 System.IO.File.Copy(SPRFR, path + @"\data\sprite\로브\" + G_FILENAME + @"\남\" + KroNames.boy[i] + ".spr", true);
@@ -131,6 +151,7 @@ namespace Garment_Files_Generator
                 System.IO.File.Copy(SPRFR, path + @"\data\sprite\로브\" + G_FILENAME + @"\여\" + KroNames.girl[i] + ".spr", true);
                 System.IO.File.Copy(ACTFR, path + @"\data\sprite\로브\" + G_FILENAME + @"\여\" + KroNames.girl[i] + ".act", true);
             }
+
             textBoxinfo.Text += "------------------------------------------------------" + Environment.NewLine;
             textBoxinfo.Text += "==================================" + Environment.NewLine;
             textBoxinfo.Text += "------------------------------------------------------" + Environment.NewLine;
@@ -168,8 +189,8 @@ namespace Garment_Files_Generator
             textBoxinfo.Text += "}" + Environment.NewLine;
             textBoxinfo.Text += "------------------------------------------------------" + Environment.NewLine;
             textBoxinfo.Text += " " + Environment.NewLine;
-            MessageBox.Show("Done");
 
+            MessageBox.Show("Done");
         }
 
         private void textBoxSPRd_TextChanged(object sender, EventArgs e)
@@ -181,6 +202,7 @@ namespace Garment_Files_Generator
         {
             var SPRFd = new System.Windows.Forms.OpenFileDialog();
             SPRFd.Filter = "SPR Files|*.spr";
+
             if (SPRFd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string fileToOpen = SPRFd.FileName;
@@ -194,6 +216,7 @@ namespace Garment_Files_Generator
         {
             var ACTFd = new System.Windows.Forms.OpenFileDialog();
             ACTFd.Filter = "ACT Files|*.act";
+
             if (ACTFd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string fileToOpen = ACTFd.FileName;
@@ -207,6 +230,7 @@ namespace Garment_Files_Generator
         {
             var itmbmp = new System.Windows.Forms.OpenFileDialog();
             itmbmp.Filter = "BMP Files|*.bmp";
+
             if (itmbmp.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string fileToOpen = itmbmp.FileName;
@@ -220,6 +244,7 @@ namespace Garment_Files_Generator
         {
             var collbmp = new System.Windows.Forms.OpenFileDialog();
             collbmp.Filter = "BMP Files|*.bmp";
+
             if (collbmp.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string fileToOpen = collbmp.FileName;
