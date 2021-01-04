@@ -51,49 +51,49 @@ namespace Garment_Files_Generator
         {
             if (string.IsNullOrWhiteSpace(textBoxName.Text))
             {
-                MessageBox.Show("Input Garment file name.");
+                MessageBox.Show("Error: Please enter the Garment file name!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxGName.Text))
             {
-                MessageBox.Show("Input Garment name.");
+                MessageBox.Show("Error: Please enter the Garment name!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxSPR.Text))
             {
-                MessageBox.Show("Import the main Spirt file");
+                MessageBox.Show("Error: Please import the Main Spr file!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxACT.Text))
             {
-                MessageBox.Show("Import the main Act file");
+                MessageBox.Show("Error: Please import the Main Act file!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxSPRd.Text))
             {
-                MessageBox.Show("Import the Drop Spirt file");
+                MessageBox.Show("Error: Please import the Drop Spr file!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxACTd.Text))
             {
-                MessageBox.Show("Import the Drop Act file");
+                MessageBox.Show("Error: Please import the Drop Act file!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxitm.Text))
             {
-                MessageBox.Show("Import the Item BMP file");
+                MessageBox.Show("Error: Please import the Item BMP file!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxcoll.Text))
             {
-                MessageBox.Show("Import the Collection BMP file");
+                MessageBox.Show("Error: Please import the Collection BMP file!!!");
                 return;
             }
 
@@ -191,7 +191,7 @@ namespace Garment_Files_Generator
             textBoxinfo.Text += "------------------------------------------------------" + Environment.NewLine;
             textBoxinfo.Text += " " + Environment.NewLine;
 
-            MessageBox.Show("Done");
+            MessageBox.Show("Info: Everything All Done!!!");
         }
 
         private void textBoxSPRd_TextChanged(object sender, EventArgs e)
