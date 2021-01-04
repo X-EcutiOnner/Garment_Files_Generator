@@ -13,7 +13,7 @@ using System.Windows.Forms;
 namespace Garment_Files_Generator
 {
     public partial class GFG : Form
-    {   
+    {
         public GFG()
         {
             InitializeComponent();
@@ -169,7 +169,7 @@ namespace Garment_Files_Generator
             textBoxinfo.Text += "------------------------------------------------------" + Environment.NewLine;
             textBoxinfo.Text += " " + Environment.NewLine;
             MessageBox.Show("Done");
-            
+
         }
 
         private void textBoxSPRd_TextChanged(object sender, EventArgs e)
