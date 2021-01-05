@@ -77,7 +77,7 @@
             this.buttonACT.Name = "buttonACT";
             this.buttonACT.Size = new System.Drawing.Size(125, 23);
             this.buttonACT.TabIndex = 3;
-            this.buttonACT.Text = "Browse - ACT";
+            this.buttonACT.Text = "เลือกไฟล์";
             this.buttonACT.UseVisualStyleBackColor = true;
             this.buttonACT.Click += new System.EventHandler(this.buttonACT_Click);
             // 
@@ -87,7 +87,7 @@
             this.buttonSPR.Name = "buttonSPR";
             this.buttonSPR.Size = new System.Drawing.Size(125, 23);
             this.buttonSPR.TabIndex = 4;
-            this.buttonSPR.Text = "Browse - SPR";
+            this.buttonSPR.Text = "เลือกไฟล์";
             this.buttonSPR.UseVisualStyleBackColor = true;
             this.buttonSPR.Click += new System.EventHandler(this.buttonSPR_Click);
             // 
@@ -97,7 +97,7 @@
             this.ButtonGENERATE.Name = "ButtonGENERATE";
             this.ButtonGENERATE.Size = new System.Drawing.Size(425, 55);
             this.ButtonGENERATE.TabIndex = 5;
-            this.ButtonGENERATE.Text = "GENERATE";
+            this.ButtonGENERATE.Text = "เริ่มสร้างไฟล์";
             this.ButtonGENERATE.UseVisualStyleBackColor = true;
             this.ButtonGENERATE.Click += new System.EventHandler(this.ButtonGENERATE_Click);
             // 
@@ -115,7 +115,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 13);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Garment File Name (no space)";
+            this.label1.Text = "ชื่อไฟล์ของผ้าคลุม (ห้ามเว้นช่องว่าง)";
             // 
             // label2
             // 
@@ -124,7 +124,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Spirt File";
+            this.label2.Text = "ไฟล์ Spr เมื่อสวมใส่";
             // 
             // label3
             // 
@@ -133,7 +133,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Act File";
+            this.label3.Text = "ไฟล์ Act เมื่อสวมใส่";
             // 
             // textBoxSPRd
             // 
@@ -159,7 +159,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 13);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Spirt drop File";
+            this.label4.Text = "ไฟล์ Spr เมื่อของตก";
             // 
             // label5
             // 
@@ -168,7 +168,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 13);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Act drop File";
+            this.label5.Text = "ไฟล์ Act เมื่อของตก";
             // 
             // textBoxitm
             // 
@@ -193,7 +193,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(53, 13);
             this.label6.TabIndex = 14;
-            this.label6.Text = "Item Icon";
+            this.label6.Text = "ไฟล์ BMP ของไอเท็ม";
             // 
             // buttonSPRd
             // 
@@ -201,7 +201,7 @@
             this.buttonSPRd.Name = "buttonSPRd";
             this.buttonSPRd.Size = new System.Drawing.Size(75, 23);
             this.buttonSPRd.TabIndex = 15;
-            this.buttonSPRd.Text = "SPR";
+            this.buttonSPRd.Text = "เลือกไฟล์";
             this.buttonSPRd.UseVisualStyleBackColor = true;
             this.buttonSPRd.Click += new System.EventHandler(this.buttonSPRd_Click);
             // 
@@ -211,7 +211,7 @@
             this.buttonACTd.Name = "buttonACTd";
             this.buttonACTd.Size = new System.Drawing.Size(75, 23);
             this.buttonACTd.TabIndex = 16;
-            this.buttonACTd.Text = "ACT";
+            this.buttonACTd.Text = "เลือกไฟล์";
             this.buttonACTd.UseVisualStyleBackColor = true;
             this.buttonACTd.Click += new System.EventHandler(this.buttonACTd_Click);
             // 
@@ -221,7 +221,7 @@
             this.buttonitm.Name = "buttonitm";
             this.buttonitm.Size = new System.Drawing.Size(75, 23);
             this.buttonitm.TabIndex = 17;
-            this.buttonitm.Text = "SMALL BMP";
+            this.buttonitm.Text = "เลือกไฟล์";
             this.buttonitm.UseVisualStyleBackColor = true;
             this.buttonitm.Click += new System.EventHandler(this.buttonitm_Click);
             // 
@@ -231,7 +231,7 @@
             this.buttoncoll.Name = "buttoncoll";
             this.buttoncoll.Size = new System.Drawing.Size(75, 23);
             this.buttoncoll.TabIndex = 18;
-            this.buttoncoll.Text = "LARGE BMP";
+            this.buttoncoll.Text = "เลือกไฟล์";
             this.buttoncoll.UseVisualStyleBackColor = true;
             this.buttoncoll.Click += new System.EventHandler(this.buttoncoll_Click);
             // 
@@ -242,7 +242,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 13);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Collection Icon";
+            this.label7.Text = "ไฟล์ BMP ของคอลเล็คชั่น";
             // 
             // textBoxinfo
             // 
@@ -268,7 +268,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 13);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Garment InGame Name";
+            this.label8.Text = "ชื่อของผ้าคลุมในเกมส์";
             // 
             // GFG
             // 
@@ -307,7 +307,6 @@
                         "Updating Code by X-EcutiOnner © 2021  |";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
