@@ -107,11 +107,11 @@ namespace Garment_Files_Generator
             var itmbmp = textBoxitm.Text;
             var collbmp = textBoxcoll.Text;
 
-            string pathdatam = path + @"\data\sprite\로브\" + G_FILENAME+ @"\남";
-            string pathdataf = path + @"\data\sprite\로브\" + G_FILENAME + @"\여";
-            string pathdatal = path + @"\data\sprite\아이템";
-            string pathdatai = path + @"\data\texture\유저인터페이스\item";
-            string pathdatac = path + @"\data\texture\유저인터페이스\collection";
+            string pathdatam = path + @"\data\sprite\ทฮบ๊\" + G_FILENAME+ @"\ณฒ";
+            string pathdataf = path + @"\data\sprite\ทฮบ๊\" + G_FILENAME + @"\ฟฉ";
+            string pathdatal = path + @"\data\sprite\พฦภฬล";
+            string pathdatai = path + @"\data\texture\ภฏภ๚ภฮลอฦไภฬฝบ\item";
+            string pathdatac = path + @"\data\texture\ภฏภ๚ภฮลอฦไภฬฝบ\collection";
 
             if (!Directory.Exists(pathdatam))
             {
@@ -138,18 +138,18 @@ namespace Garment_Files_Generator
                 DirectoryInfo DATAFc = Directory.CreateDirectory(pathdatac);
             }
 
-            System.IO.File.Copy(SPRFRd, path + @"\data\sprite\아이템\" + G_FILENAME + ".spr" , true);
-            System.IO.File.Copy(ACTFRd, path + @"\data\sprite\아이템\" + G_FILENAME + ".act", true);
-            System.IO.File.Copy(itmbmp, path + @"\data\texture\유저인터페이스\item\" + G_FILENAME + ".bmp" , true);
-            System.IO.File.Copy(collbmp, path + @"\data\texture\유저인터페이스\collection\" + G_FILENAME + ".bmp", true);
+            System.IO.File.Copy(SPRFRd, path + @"\data\sprite\พฦภฬล\" + G_FILENAME + ".spr" , true);
+            System.IO.File.Copy(ACTFRd, path + @"\data\sprite\พฦภฬล\" + G_FILENAME + ".act", true);
+            System.IO.File.Copy(itmbmp, path + @"\data\texture\ภฏภ๚ภฮลอฦไภฬฝบ\item\" + G_FILENAME + ".bmp" , true);
+            System.IO.File.Copy(collbmp, path + @"\data\texture\ภฏภ๚ภฮลอฦไภฬฝบ\collection\" + G_FILENAME + ".bmp", true);
 
             for (int i = 0; i < KroNames.boy.Length; i++)
             {
-                System.IO.File.Copy(SPRFR, path + @"\data\sprite\로브\" + G_FILENAME + @"\남\" + KroNames.boy[i] + ".spr", true);
-                System.IO.File.Copy(ACTFR, path + @"\data\sprite\로브\" + G_FILENAME + @"\남\" + KroNames.boy[i] + ".act", true);
+                System.IO.File.Copy(SPRFR, path + @"\data\sprite\ทฮบ๊\" + G_FILENAME + @"\ณฒ\" + KroNames.boy[i] + ".spr", true);
+                System.IO.File.Copy(ACTFR, path + @"\data\sprite\ทฮบ๊\" + G_FILENAME + @"\ณฒ\" + KroNames.boy[i] + ".act", true);
 
-                System.IO.File.Copy(SPRFR, path + @"\data\sprite\로브\" + G_FILENAME + @"\여\" + KroNames.girl[i] + ".spr", true);
-                System.IO.File.Copy(ACTFR, path + @"\data\sprite\로브\" + G_FILENAME + @"\여\" + KroNames.girl[i] + ".act", true);
+                System.IO.File.Copy(SPRFR, path + @"\data\sprite\ทฮบ๊\" + G_FILENAME + @"\ฟฉ\" + KroNames.girl[i] + ".spr", true);
+                System.IO.File.Copy(ACTFR, path + @"\data\sprite\ทฮบ๊\" + G_FILENAME + @"\ฟฉ\" + KroNames.girl[i] + ".act", true);
             }
 
             textBoxinfo.Text += "=============================================================" + Environment.NewLine;
