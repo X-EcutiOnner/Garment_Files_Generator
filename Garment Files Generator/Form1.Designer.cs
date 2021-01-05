@@ -303,8 +303,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.Name = "GFG";
-            this.Text = "Garment Files Generator v1.0                                                     " +
-    "                  By Sader Fawall (sader1992)";
+            this.Text = " |  Garment Files Generator v2021.01.05  |  Original Code by Sader Fawall (sader1992) © 2017  |  " +
+                        "Updating Code by X-EcutiOnner © 2021  |";
             this.ResumeLayout(false);
             this.PerformLayout();
 
