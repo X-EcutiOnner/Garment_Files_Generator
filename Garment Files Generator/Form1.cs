@@ -51,49 +51,49 @@ namespace Garment_Files_Generator
         {
             if (string.IsNullOrWhiteSpace(textBoxName.Text))
             {
-                MessageBox.Show("Error: Please enter the Garment file name!!!");
+                MessageBox.Show("ผิดพลาด: โปรดป้อนชื่อไฟล์ของผ้าคลุม!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxGName.Text))
             {
-                MessageBox.Show("Error: Please enter the Garment name!!!");
+                MessageBox.Show("ผิดพลาด: โปรดป้อนชื่อของผ้าคลุมที่จะแสดงในหน้าต่างไอเท็ม!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxSPR.Text))
             {
-                MessageBox.Show("Error: Please import the Main Spr file!!!");
+                MessageBox.Show("ผิดพลาด: โปรดนำเข้าไฟล์ Spr เมื่อสวมใส่!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxACT.Text))
             {
-                MessageBox.Show("Error: Please import the Main Act file!!!");
+                MessageBox.Show("ผิดพลาด: โปรดนำเข้าไฟล์ Act เมื่อสวมใส่!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxSPRd.Text))
             {
-                MessageBox.Show("Error: Please import the Drop Spr file!!!");
+                MessageBox.Show("ผิดพลาด: โปรดนำเข้าไฟล์ Spr เมื่อของตก!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxACTd.Text))
             {
-                MessageBox.Show("Error: Please import the Drop Act file!!!");
+                MessageBox.Show("ผิดพลาด: โปรดนำเข้าไฟล์ Act เมื่อของตก!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxitm.Text))
             {
-                MessageBox.Show("Error: Please import the Item BMP file!!!");
+                MessageBox.Show("ผิดพลาด: โปรดนำเข้าไฟล์ BMP ของไอเท็ม!!!");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(textBoxcoll.Text))
             {
-                MessageBox.Show("Error: Please import the Collection BMP file!!!");
+                MessageBox.Show("ผิดพลาด: โปรดนำเข้าไฟล์ BMP ของคอลเล็คชั่น!!!");
                 return;
             }
 
@@ -153,7 +153,7 @@ namespace Garment_Files_Generator
             }
 
             textBoxinfo.Text += "=============================================================" + Environment.NewLine;
-            textBoxinfo.Text += "Put in System\\ItemInfo*.(lua/lub) file" + Environment.NewLine;
+            textBoxinfo.Text += "คัดลอกไปใส่ในไฟล์ System\\ItemInfo*.(lua/lub)" + Environment.NewLine;
             textBoxinfo.Text += "=============================================================" + Environment.NewLine;
             textBoxinfo.Text += "[<ItemID>] = {" + Environment.NewLine;
             textBoxinfo.Text += "   unidentifiedDisplayName = \"" + G_INGAME + "\"," + Environment.NewLine;
@@ -176,7 +176,7 @@ namespace Garment_Files_Generator
             textBoxinfo.Text += "}," + Environment.NewLine;
             textBoxinfo.Text += " " + Environment.NewLine;
             textBoxinfo.Text += "=============================================================" + Environment.NewLine;
-            textBoxinfo.Text += "Put in data\\luafiles514\\lua files\\datainfo\\SpriteRobeName.(lua/lub) file" + Environment.NewLine;
+            textBoxinfo.Text += "คัดลอกไปใส่ในไฟล์ data\\luafiles514\\lua files\\datainfo\\SpriteRobeName.(lua/lub)" + Environment.NewLine;
             textBoxinfo.Text += "=============================================================" + Environment.NewLine;
             textBoxinfo.Text += "RobeNameTable = {" + Environment.NewLine;
             textBoxinfo.Text += "   [SPRITE_ROBE_IDs.ROBE_SwordWing] = \"" + G_FILENAME + "\"" + Environment.NewLine;
@@ -186,7 +186,7 @@ namespace Garment_Files_Generator
             textBoxinfo.Text += "}" + Environment.NewLine;
             textBoxinfo.Text += " " + Environment.NewLine;
             textBoxinfo.Text += "=============================================================" + Environment.NewLine;
-            textBoxinfo.Text += "Put in data\\luafiles514\\lua files\\datainfo\\SpriteRobeID.(lua/lub) file" + Environment.NewLine;
+            textBoxinfo.Text += "คัดลอกไปใส่ในไฟล์ data\\luafiles514\\lua files\\datainfo\\SpriteRobeID.(lua/lub)" + Environment.NewLine;
             textBoxinfo.Text += "=============================================================" + Environment.NewLine;
             textBoxinfo.Text += "SPRITE_ROBE_IDs = {" + Environment.NewLine;
             textBoxinfo.Text += "   ROBE_" + G_FILENAME + " = <ViewID>" + Environment.NewLine;
@@ -195,7 +195,7 @@ namespace Garment_Files_Generator
             textBoxinfo.Text += "=============================================================" + Environment.NewLine;
             textBoxinfo.Text += " " + Environment.NewLine;
 
-            MessageBox.Show("Info: Everything All Done!!!");
+            MessageBox.Show("ข้อมูล: ทุกอย่างเสร็จสิ้น!!!");
         }
 
         private void textBoxSPRd_TextChanged(object sender, EventArgs e)
