@@ -179,7 +179,7 @@ namespace Garment_Files_Generator
             textBoxinfo.Text += "คัดลอกไปใส่ในไฟล์ data\\luafiles514\\lua files\\datainfo\\SpriteRobeName.(lua/lub)" + Environment.NewLine;
             textBoxinfo.Text += "=============================================================" + Environment.NewLine;
             textBoxinfo.Text += "RobeNameTable = {" + Environment.NewLine;
-            textBoxinfo.Text += "   [SPRITE_ROBE_IDs.ROBE_SwordWing] = \"" + G_FILENAME + "\"" + Environment.NewLine;
+            textBoxinfo.Text += "   [SPRITE_ROBE_IDs.ROBE_" + G_FILENAME + "] = \"" + G_FILENAME + "\"" + Environment.NewLine;
             textBoxinfo.Text += "}" + Environment.NewLine;
             textBoxinfo.Text += "RobeNameTable_Eng = {" + Environment.NewLine;
             textBoxinfo.Text += "   [SPRITE_ROBE_IDs.ROBE_" + G_FILENAME + "] = \"" + G_FILENAME + "\"" + Environment.NewLine;
